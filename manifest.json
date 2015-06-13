@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "js": [ "data/assets/jquery.min.js", "data/app/main.js" ],
+      "matches": [ "*://*.reddit.com/*top*", "*://*.reddit.com/*controversial*"  ]
+   }], 
+   "name": "Reddit Yesterday",
+   "icons": {
+      "128": "data/assets/icon-128.png",
+      "16": "data/assets/icon-16.png",
+      "48": "data/assets/icon-48.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "17",
+   "description": "Adds a 'yesterday' button to the existing options in the top/controversial stories menu to see what reddit looked like yesterday.",
+   "version": "1.0",
+   "web_accessible_resources": ["data/assets/data/app/jquery.min.map"]
+}
